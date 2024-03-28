@@ -5,7 +5,7 @@ body {
     font-size: x-large;
     text-transform: uppercase; /* Uppercase text */
     margin: 0;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center align items horizontally */
