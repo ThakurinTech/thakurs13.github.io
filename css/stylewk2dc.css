@@ -1,15 +1,14 @@
 body {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color:#767676; /* Light gray background */
     font-family: Arial, sans-serif; /* Font family */
-    color: #333; /* Text color */
   }
   
   h1 {
-    color: #4caf50; /* Green color for heading */
+    color:  #800000; /* Green color for heading */
   }
   
   p {
-    color: #555; /* Dark gray color for paragraphs */
+    color:#D6D6CE; /* Dark gray color for paragraphs */
     line-height: 1.5; /* Line height for better readability */
   }
   
