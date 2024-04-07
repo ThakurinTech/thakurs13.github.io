@@ -1,0 +1,32 @@
+/* styles1.css */
+
+body {
+    background-color: rgb(219, 172, 198); /* Change background color as desired */
+    color: #333333; /* Default text color */
+}
+
+h1 {color: rgb(128, 0, 98); /* Change title color to maroon */
+    font-weight: bolder; /* Make titles bold */
+}
+h2{ color: rgb(128, 0, 98); /* Change title color to maroon */
+    font-weight: bolder; /* Make titles bold */}
+h3 {
+    color: rgb(128, 0, 98); /* Change title color to maroon */
+    font-weight: bold; /* Make titles bold */
+}
+
+/* Add space between module names */
+.m1 h3,
+.m2 h3,
+.extra h3 {
+    margin-bottom: 20px;
+}
+
+/* Style links */
+a {
+    color: rgb(36, 25, 200); /* Change link color to a complementary color */
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
