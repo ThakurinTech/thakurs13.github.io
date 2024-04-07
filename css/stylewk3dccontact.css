@@ -28,9 +28,9 @@ th, td {
     border: 1px solid var(--uchicago-gray);
 }
 
-th {
-    background-color: var(--uchicago-blue);
-    color: rgb(9, 8, 8);
+thead, th {
+    background-color: var(--uchicago-maroon);
+    color: rgb(246, 240, 240);
     text-align: left;
 }
 
