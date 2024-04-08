@@ -1,4 +1,4 @@
-/* Define UChicago colors */
+/* UChicago colors */
 :root {
     --uchicago-blue: #3C3B6E;
     --uchicago-maroon: #6A0D24;
@@ -6,21 +6,20 @@
     --uchicago-gray: #A7A8AA;
 }
   
-/* Table styles */
-
 body {
-    background-color:#767676; /* Light gray background */}
+    background-color:white; }
+h1 {
+        color:  #800000; 
+      }
+
 table {
     width: 100%;
-    border-collapse: collapse;
+    border: 5px solid rgb(14, 11, 11);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto; 
+    font-weight: weight;
+    font-style: normal;
     margin-bottom: 20px;
-}
-
-caption {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: var(--uchicago-maroon);
 }
 
 th, td {
@@ -39,5 +38,5 @@ th[scope="row"] {
 }
 
 th[scope="row"], td {
-    color: rgb(251, 249, 249);
+    color:#800000(251, 249, 249);
 }

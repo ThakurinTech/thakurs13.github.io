@@ -1,28 +1,24 @@
-/* styles1.css */
 
 body {
-    background-color: #767676; /* Use hex color format for background-color */
+    background-color: #767676; 
     color: #D6D6CE; 
 }
 
 h1, h2, h3 {
-    color: #800000; /* Change title color to maroon */
-    font-weight: bolder; /* Make titles bold */
-}
+    color: #800000; 
+    font-weight: bolder; }
 
-/* Add space between module names */
+
 .m1 h3,
 .m2 h3,
 .extra h3 {
     margin-bottom: 20px;
 }
 
-/* Style links */
 a {
-    color: rgb(36, 25, 200); /* Change link color to a complementary color */
+    color: rgb(36, 25, 200); 
 }
 
-/* Hover effect for links */
 a:hover {
     text-decoration: underline;
 }

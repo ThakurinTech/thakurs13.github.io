@@ -1,20 +1,20 @@
+/* Uchicago Palette */
+:root {
+  --uchicago-maroon: #800000;
+  --uchicago-gray: #f0f0f0;
+}
 
 body {
-    background-color: #767676; /* Use hex color format for background-color */
-    color: #D6D6CE; 
+  background-color: var(--uchicago-gray);
+  color: var(--uchicago-maroon); 
 }
 
-/* Colors */
-.navbar-brand,
+.navbar.bg-dark {
+  background-color: var(--uchicago-maroon)!important; 
+}
+
 .navbar-nav .nav-link {
-    color: #6A0D24; /* UChicago maroon color */
-}
-
-/* Make text bolder */
-.navbar-brand,
-.navbar-nav .nav-link {
-    font-weight: bold;
+  color: var(--uchicago-gray);
 }
 
 
-  
