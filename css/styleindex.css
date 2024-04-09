@@ -1,5 +1,5 @@
 body {
-    background-color: #767676; 
+    background-color: #D6D6CE; 
     color: #D6D6CE; 
 }
 
@@ -19,5 +19,5 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
