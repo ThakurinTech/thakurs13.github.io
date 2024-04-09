@@ -1,15 +1,14 @@
-/* Uchicago  Palette*/
-:root {
-  --uchicago-maroon: #800000;
-  --uchicago-light-gray:#D6D6CE;
-  --uchicago-dark-gray:#767676;
-}
 body {
-  background-color:var(--uchicago-light-gray);
-  color:var(--uchicago-maroon)}
+  background-color: var(--uchicago-light-gray);
+  color: var(--uchicago-maroon);
+}
 
-.header{background-color: var(--uchicago-light-gray);
-  color:var(--uchicago-maroon)}
-  
-.footer{background-color:var(--uchicago-dark-gray);
-  color:var(--uchicago-light-gray)}  
+.header {
+  background-color: var(--uchicago-light-gray);
+  color: var(--uchicago-maroon);
+}
+
+.footer {
+  background-color: var(--uchicago-dark-gray);
+  color: var(--uchicago-light-gray);
+}/*# sourceMappingURL=stylewk3tp.css.map */
