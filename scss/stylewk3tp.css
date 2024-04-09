@@ -1,3 +1,10 @@
+/* Uchicago  Palette*/
+:root {
+  --uchicago-maroon: #800000;
+  --uchicago-light-gray:#D6D6CE;
+  --uchicago-dark-gray:#767676;
+}
+
 body {
   background-color: var(--uchicago-light-gray);
   color: var(--uchicago-maroon);
