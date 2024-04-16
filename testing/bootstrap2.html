@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/bootstrap2.css">
-    <title>Digital Chalkboard Week 03</title>
+    <title>Technical Presentation Week 04</title>   
 </head>
 <body>
     <!-- Navbar -->
@@ -31,7 +31,6 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -40,8 +39,9 @@
             </div>
         </div>
     </nav>
+    <h1>DIGS 20005 Data Publication for the Humanities</h1>
     <!-- Content -->
-    <div class="container">
+    <div class="container mt-4">
         <div class="row justify-content-start"> 
             <div class="col">    
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur mauris id nisl ultricies, eu finibus purus tempus.</p>
@@ -57,39 +57,93 @@
             </div>
         </div>
     </div>
-    
-    <div class="container">	
-        <div class="row">	
-            <div class="col-sm">	
-                <img src="../images/2d7e69da-d930-4424-af99-3e04cb9625c1_1_tbig.jpg"	alt="pic1" class="img-fluid uniform-height-img">
-            </div>	
-    <div class="col">	
-	            <img src="../images/PWGOTA01.jpg.webp" alt="pic2" class="img-fluid uniform-height-img">
-            </div>	
-    <div class="col">	
-                <img src="../images/81Ltyqoh6IL._AC_UF894,1000_QL80_.jpg" alt="pic3"	class="img-fluid uniform-height-img">
-            </div>	
+    <!-- Images Container -->
+    <div class="container mt-4 image-container">
+        <div class="row justify-content-center"> 
+            <div class="col-sm text-center"> <!-- Left-align for the first image -->
+                <img src="../images/2d7e69da-d930-4424-af99-3e04cb9625c1_1_tbig.jpg" alt="pic1" class="img-fluid uniform-height-img mb-3"> <!-- Add margin bottom for spacing -->
+                <p>Krishna</p>
+            </div>
+            <div class="col-sm text-center"> <!-- Center-align for the second image -->
+                <img src="../images/PWGOTA01.jpg.webp" alt="pic2" class="img-fluid uniform-height-img mb-3"> <!-- Add margin bottom for spacing -->
+                <p>Shiva</p>
+            </div>
+            <div class="col-sm text-center"> <!-- Right-align for the third image -->
+                <img src="../images/81Ltyqoh6IL._AC_UF894,1000_QL80_.jpg" alt="pic3" class="img-fluid uniform-height-img mb-3"> <!-- Add margin bottom for spacing -->
+                <p>Aradhnareshwar</p>
+            </div>
         </div>
     </div>
-
+    <!--Image Styling-->    
+    <div class="container mt-3">
+        <div class="row d-flex align-items-center" style="background-color: rgb(203, 189, 211);">
+            <div class="col-sm-4">
+                <img src="../images/nataraja-shiva-pieter-weltevrede-canvas-print.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="Albert Einstein">
+            </div>
+            <div class="col-sm-8">
+                <blockquote class="blockquote">
+                    <p style="color: white;">"OM"</p>
+                    <footer class="blockquote-footer">Natraja</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>      
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="slide fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="../images/2d7e69da-d930-4424-af99-3e04cb9625c1_1_tbig.jpg" style="width:50%" alt="Krishna">
+            <div class="text">Krishna</div>
+        </div>
+        <div class="slide fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../images/PWGOTA01.jpg.webp" style="width:50%" alt="Shiva">
+            <div class="text">Shiva</div>
+        </div>
+        <div class="slide fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="../images/81Ltyqoh6IL._AC_UF894,1000_QL80_.jpg" style="width:50%" alt="Aradhnareshwar">
+            <div class="text">Aradhnareshwar</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--Accordion-->
+    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+        <h2>Choose one painting</h2>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+        <label class="btn btn-outline-danger" for="vbtn-radio1">Krishna</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio2">Shiva</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio3">Aradhnareshwar</label>
+    </div>
     <!-- Buttons -->
     <div class="container mt-4">
         <div class="row">
             <div class="col text-center">
-            <button id="button1" class="btn btn-primary">Greet</button>
+                <button id="button1" class="btn btn-primary">Greet</button>
             </div>
             <div class="col text-center">
-            <button id="button2" class="btn btn-secondary">Submit</button>
+                <button id="button2" class="btn btn-secondary">Submit</button>
             </div>
         </div>
     </div>
-         
     <!-- Bootstrap JS and other scripts can be included at the end of the body -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-mBKipER0kC+QCcl9e4+6omHkDOfTuhuvKcgM3Se2X9WnT2ePLjNXKt+vuzH9srhR" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+CE/L2rZc2Ae4zvlJr4RLjrAu5wpX3SkkEELGS3" crossorigin="anonymous"></script>
-
-<!-- JavaScript functions for buttons -->
+    <!-- JavaScript functions for buttons -->
     <script src="../js/buttons.js"></script>
-
+    <script src="../js/accordion.js"></script>
+    <script src="../js/c.js"></script>
 </body>
 </html>
