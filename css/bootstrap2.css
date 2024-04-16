@@ -1,0 +1,36 @@
+
+/* Uchicago Palette */
+:root {
+    --uchicago-maroon: #800000;
+    --uchicago-gray: #f0f0f0;
+}
+
+body {
+    background-color: #800000;
+    
+    color: var(--uchicago-gray); 
+}
+
+
+.uniform-hieght-img {
+    width: 100px;
+    height: 300px;
+    object-fit:cover;
+}
+
+.navbar.bg-dark {
+    background-color: var(--uchicago-maroon)!important; 
+}
+
+.navbar-nav .nav-link {
+    color: var(--uchicago-maroon);
+}
+
+/* Add subtle background color to columns */
+.col-sm-6,
+.col-md-3 {
+    background-color: var(--uchicago-gray);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
