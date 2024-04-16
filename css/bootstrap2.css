@@ -23,7 +23,7 @@
           }
         }
 body {
-    background-color: #800000;
+    background-color: #5d430d;
     
     color: var(--uchicago-gray); 
 }
@@ -114,7 +114,7 @@ h1{
   .numbertext {
     position: absolute;
     top: 0;
-    color: white;
+    color: rgb(18, 16, 16);
     padding: 8px 12px;
   }
   
@@ -123,3 +123,21 @@ h1{
     display: block;
   }
   
+  /* Add your custom styles here */
+  .slideshow-container {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+  }
+
+  .slide {
+      display: none;
+      width: 100%;
+  }
+
+  .slide img {
+      width: 100%;
+  }
+
+ 
+
