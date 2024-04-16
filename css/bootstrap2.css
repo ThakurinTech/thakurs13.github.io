@@ -49,6 +49,8 @@ h1{
     object-fit: cover;
 }
 
+
+/* Custom CSS for Navbar */
 .navbar.bg-dark {
     background-color: var(--uchicago-maroon)!important; 
 }
@@ -56,6 +58,43 @@ h1{
 .navbar-nav .nav-link {
     color: var(--uchicago-maroon);
 }
+
+
+.navbar {
+    background-color: #800000; 
+}
+
+.navbar-brand {
+    color: #ffffff; 
+    font-size: 1.5rem; 
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffc107; 
+}
+
+.dropdown-menu {
+    background-color:#800000; 
+}
+
+.dropdown-item {
+    color: #ffffff; 
+}
+
+.dropdown-item:hover {
+    background-color: #495057; 
+}
+
+.dropdown-divider {
+    background-color: #6c757d; }
+
+
+
+
 
 /* Add subtle background color to columns */
 .col-sm-6,
