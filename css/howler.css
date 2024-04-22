@@ -1,0 +1,23 @@
+body {
+  padding-bottom: 100px;
+  background-color: #1e272e; /* Dark blue-gray background */
+  color: #ffffff; /* White text color */
+}
+
+#jumbotron {
+  background-color: #ffa8015c; /* Orange jumbotron with transparency */
+  height: 20vh;
+  position: relative;
+}
+
+nav {
+  background-color: #3c40c6; /* Indigo navigation bar */
+}
+
+
+.howlerImage {
+  max-width: 3000px; /* Set a fixed width for all images */
+  max-height: 300px; /* Set a fixed height for all images */
+  height: auto; /* Maintain aspect ratio */
+}
+

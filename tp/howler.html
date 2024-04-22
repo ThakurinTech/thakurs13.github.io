@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/howler.css">
+
+    <title>HOWLER</title>
+</head>
+
+<body id="pageBody">
+    <!--Nav is loaded here via jQuery-->
+    <div id="nav-placeholder"></div>
+    <div id="jumbotron" class="container-fluid mb-4 d-flex align-items-center">
+        <div class="h1">How Indian Classical music sounds like?</div>
+    </div>
+    <div class="container-fluid">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="h3 py-3">Click an image to find out!</div>
+            <div class="col-lg-3">
+                <h2 class="instrumentTitle">Sitar</h2>
+                <img id="instrument01" src="../images/sitar.jpg.webp" class="img-thumbnail howlerImage"
+                    data-media="../media/sitar.mp3" alt="Sitar">
+            </div>
+            <div class="col-lg-3">
+                <h2 class="instrumentTitle">Sarangi</h2>
+                <img id="instrument02" src="../images/sarangi.jpg" class="img-thumbnail howlerImage"
+                    data-media="../media/Sarangi.mp3" alt="Sarangi">
+            </div>
+            <div class="col-lg-3">
+                <h2 class="instrumentTitle">Veena</h2>
+                <img id="instrument03" src="../images/Veena.jpg" class="img-thumbnail howlerImage"
+                    data-media="../media/Veena.mp3" alt="Veena">
+            </div>
+            <div class="col-lg-3">
+                <h2 class="instrumentTitle">Flute</h2>
+                <img id="instrument04" src="../images/F-SCALE.jpg.webp" class="img-thumbnail howlerImage"
+                    data-media="../media/Flute.mp3" alt="Flute">  
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--Load the nav-->
+    <script src="../js/nav.js"></script>
+    <script src="../js/howl.js"></script>
+</body>
+
+</html>
