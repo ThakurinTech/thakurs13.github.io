@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
@@ -12,12 +13,41 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/howler.css">
-
+    <link rel="stylesheet" href="../css/bootstrap2.css"> 
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Digital Chalkboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" 
+      href="https://thakurintech.github.io/thakurs13.github.io/index.html">HomePage</a></li>
+                            <li><a class="dropdown-item"                             href="https://thakurintech.github.io/thakurs13.github.io/dc/wk2.html">Week2</a></li>
+                        <li><a class="dropdown-item" href="https://thakurintech.github.io/thakurs13.github.io/testing/bootstrap.html">Week3 </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <title>HOWLER</title>
 </head>
 
 <body id="pageBody">
-    <!--Nav is loaded here via jQuery-->
     <div id="nav-placeholder"></div>
     <div id="jumbotron" class="container-fluid mb-4 d-flex align-items-center">
         <div class="h1">How Indian Classical music sounds like?</div>
@@ -62,6 +92,7 @@
     <!--Load the nav-->
     <script src="../js/nav.js"></script>
     <script src="../js/howl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ body {
     color: #333; /* Dark Gray */
 }
 
-h1, h2, h3 {
+ h2, h3 {
     color:#007bff; /* Dark Gray */
 }
 
@@ -12,7 +12,7 @@ h1 {
     text-align: center;
     margin-top: 20px;
 }
-
+p{ color:#333}
 .section {
     background-color: #fff; /* White */
     padding: 20px;

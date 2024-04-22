@@ -65,12 +65,12 @@ h1{
 }
 
 .navbar-brand {
-    color: #ffffff; 
+    color:#800000; 
     font-size: 1.5rem; 
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff; 
+    color: maroon; 
 }
 
 .navbar-nav .nav-item.active .nav-link {

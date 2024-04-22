@@ -1,11 +1,11 @@
 body {
   padding-bottom: 100px;
   background-color: #1e272e; /* Dark blue-gray background */
-  color: #ffffff; /* White text color */
+  color: #eeeeee; /* White text color */
 }
 
 #jumbotron {
-  background-color: #ffa8015c; /* Orange jumbotron with transparency */
+  background-color: #cda2545c; /* Orange jumbotron with transparency */
   height: 20vh;
   position: relative;
 }
