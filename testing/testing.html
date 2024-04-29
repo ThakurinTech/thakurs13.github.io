@@ -3,170 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customized Charts</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <title>Chris Davidson's Page</title>
+    <link rel="icon" href="../images/objective-lens-icon-with-six-rainbow-colors-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=" crossorigin="anonymous">
+    <style>
+        /* Uchicago Palette */
+        :root {
+            --uchicago-maroon: #800000;
+            --uchicago-gray: #f0f0f0;
+        }
+
+        body {
+            background-color: var(--uchicago-gray);
+            color: var(--uchicago-maroon); 
+        }
+
+        .navbar.navbar-expand-lg {
+            background-color: var(--uchicago-maroon);
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--uchicago-gray);
+        }
+    </style>
 </head>
 <body>
-    <!-- Bar Chart -->
-    <div style="width: 50%; margin: 20px auto;">
-        <h2>Bar Chart</h2>
-        <canvas id="myBarChart"></canvas>
-    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Chris Davidson's Page</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="DC_dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Digital Chalkboard
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="DC_dropdown">
+                  <li><a class="dropdown-item" href="../../DC/Week_2/hello_world.html">Week 2</a></li>
+                  <li><a class="dropdown-item" href="../../about.html">Week 3</a></li>
+                  <li><a class="dropdown-item" href="../../DC/Week_4/bootstrap_button.html">Week 4</a></li>
+                  <li><a class="dropdown-item" href="../../DC/Week_5/JS_textbox.html">Week 5</a></li>
+                  <li><a class="dropdown-item" href="#">Week 6</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="Tech_dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Technical Assignments
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="Tech_dropdown">
+                  <li><a class="dropdown-item" href="../../Tech_Presentation/console.html">Week 2</a></li>
+                  <li><a class="dropdown-item" href="../../Tech_Presentation/Week_3/Tech_sass.html">Week 3</a></li>
+                  <li><a class="dropdown-item" href="../../advanced_bootstrap.html">Week 4</a></li>
+                  <li><a class="dropdown-item" href="../../Tech_Presentation/Week_5/howler.html">Week 5</a></li>
+                  <li><a class="dropdown-item" href="../../Tech_Presentation/Week_6/chartJS.html">Week 6</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
-    <!-- Pie Chart -->
-    <div style="width: 50%; margin: 20px auto;">
-        <h2>Pie Chart</h2>
-        <canvas id="myPieChart"></canvas>
-    </div>
-
-    <!-- Polar Area Chart -->
-    <div style="width: 50%; margin: 20px auto;">
-        <h2>Polar Area Chart</h2>
-        <canvas id="myPolarAreaChart"></canvas>
-    </div>
-
-    <!-- Line Chart -->
-    <div style="width: 50%; margin: 20px auto;">
-        <h2>Line Chart</h2>
-        <canvas id="myLineChart"></canvas>
-    </div> 
-
-    <script>
-        // Bar Chart
-        const ctxBar = document.getElementById('myBarChart').getContext('2d');
-        const barChart = new Chart(ctxBar, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.5)',
-                        'rgba(54, 162, 235, 0.5)',
-                        'rgba(255, 206, 86, 0.5)',
-                        'rgba(75, 192, 192, 0.5)',
-                        'rgba(153, 102, 255, 0.5)',
-                        'rgba(255, 159, 64, 0.5)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        // Pie Chart
-        const ctxPie = document.getElementById('myPieChart').getContext('2d');
-        const pieChart = new Chart(ctxPie, {
-            type: 'pie',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.5)',
-                        'rgba(54, 162, 235, 0.5)',
-                        'rgba(255, 206, 86, 0.5)',
-                        'rgba(75, 192, 192, 0.5)',
-                        'rgba(153, 102, 255, 0.5)',
-                        'rgba(255, 159, 64, 0.5)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
-
-        // Polar Area Chart
-        const ctxPolarArea = document.getElementById('myPolarAreaChart').getContext('2d');
-        const polarAreaChart = new Chart(ctxPolarArea, {
-            type: 'polarArea',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.5)',
-                        'rgba(54, 162, 235, 0.5)',
-                        'rgba(255, 206, 86, 0.5)',
-                        'rgba(75, 192, 192, 0.5)',
-                        'rgba(153, 102, 255, 0.5)',
-                        'rgba(255, 159, 64, 0.5)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
-
-        // Line Chart
-        const ctxLine = document.getElementById('myLineChart').getContext('2d');
-        const lineChart = new Chart(ctxLine, {
-            type: 'line',
-            data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                datasets: [{
-                    label: 'My Dataset',
-                    data: [65, 59, 80, 81, 56, 55, 40],
-                    fill: false,
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    tension: 0.1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Customized Line Chart'
-                    },
-                    tooltip: {
-                        displayColors: false,
-                        callbacks: {
-                            label: function(context) {
-                                return 'Value: ' + context.parsed.y;
-                            }
-                        }
-                    }
-                }
-            }
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=" crossorigin="anonymous"></script>
 </body>
 </html>
