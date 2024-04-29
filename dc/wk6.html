@@ -3,26 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Item</title>
+    <title>Digital Chalkboard Week 03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 <body>
-    <div id="output"></div>
-    <button onclick="lastItem(['Watermelon', 'Apple', 'Orange', 'Kiwi'])">Get Last Item</button>
-
-    <script>
-        function lastItem(arr) {
-            // Output the original array
-            document.getElementById('output').innerHTML = 'Original Array: ' + JSON.stringify(arr) + '<br>';
-            
-            // Sort the array alphabetically
-            arr.sort();
-
-            // Get the last item which will be the last alphabetically
-            var lastAlphabeticalItem = arr[arr.length - 1];
-
-            // Output the last item
-            document.getElementById('output').innerHTML += 'Last Alphabetical Item: ' + lastAlphabeticalItem;
-        }
-    </script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Digital Chalkboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../dc/wk3contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../dc/wk3about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>Button Example</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!DOCTYPE html>
+<title>Button Example</title>
+<style>
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .custom-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 100px; 
+  }
+</style>
+<script>
+function lastItem(arr) {
+    // original array
+    document.getElementById('output').innerHTML = 'Original Array: [' + arr.join(', ') + ']<br>';
+    let lastItem = arr.sort()[arr.length - 1];
+    document.getElementById('output').innerHTML += 'Last Alphabetically: ' + lastItem;
+}
+function sortItems() {
+    let numThings = parseInt(prompt("How many things would you like to enter (between 2 and 4)?"));
+ 
+    if (isNaN(numThings) || numThings < 2 || numThings > 4) {
+        alert("Please enter a number between 2 and 4.");
+        return;
+    }
+    let things = [];
+    for (let i = 0; i < numThings; i++) {
+        let thing = prompt("Enter thing #" + (i + 1));
+        things.push(thing);
+    }
+    things.sort();
+    let output = "Sorted Things:<br>";
+    for (let i = 0; i < things.length; i++) {
+        output += things[i] + "<br>";
+    }
+    document.getElementById('output').innerHTML = output;
+}
+</script>
+</head>
+<body>
+<div class="button-container">
+  <button class="custom-button" onclick="lastItem(['Happy', 'Sad', 'Pensive', 'Perplexed'])">Sort</button>
+  <button class="custom-button" onclick="sortItems()">Enter Things</button>
+</div>
+<div id="output"></div>
 </body>
 </html>
