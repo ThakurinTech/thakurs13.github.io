@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Item</title>
+</head>
+<body>
+    <div id="output"></div>
+    <button onclick="lastItem(['Watermelon', 'Apple', 'Orange', 'Kiwi'])">Get Last Item</button>
+
+    <script>
+        function lastItem(arr) {
+            // Output the original array
+            document.getElementById('output').innerHTML = 'Original Array: ' + JSON.stringify(arr) + '<br>';
+            
+            // Sort the array alphabetically
+            arr.sort();
+
+            // Get the last item which will be the last alphabetically
+            var lastAlphabeticalItem = arr[arr.length - 1];
+
+            // Output the last item
+            document.getElementById('output').innerHTML += 'Last Alphabetical Item: ' + lastAlphabeticalItem;
+        }
+    </script>
+</body>
+</html>
