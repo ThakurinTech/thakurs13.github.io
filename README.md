@@ -1,2 +1,2 @@
 # thakurs13.github.io
-test update
+Assignment repository for Data Publication
