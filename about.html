@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 30px;
+        }
+
+        .about-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .about-photo img {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .about-details {
+            flex: 1;
+        }
+
+        .about-details h2 {
+            margin-top: 0;
+        }
+
+        .about-details p {
+            margin: 5px 0;
+        }
+
+        .about-details a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .about-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar-placeholder"></nav> <!-- Placeholder for navigation -->
+
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <div class="about-card">
+            <div class="about-photo">
+                <img src="../thakurs13.github.io/images/4AE03429-4384-4E82-B8B4-4D44B9C81A87.jpeg" alt="Profile Photo">
+            </div>
+            <div class="about-details">
+                <h2>Shikha Thakur</h2>
+                <p> Hi ! This is Shikha, I am a current graduate student at The University of Chicago, IL. I am majoring in NLP/NLU/NLG.This is my professional website, where you can navigate to different projects that I undertook as part of Masters course in Digital Studies of Language, Culture and History.</p>
+ 
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript to dynamically load the navigation bar -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch the navigation bar HTML using an XMLHttpRequest
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Insert the retrieved navbar HTML into the current page
+                    document.getElementById("navbar-placeholder").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "nav.html", true);
+            xhttp.send();
+        });
+    </script>
+</body>
+</html>
+
