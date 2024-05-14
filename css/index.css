@@ -1,78 +1,86 @@
-/* Define variables */
 :root {
-    --uchicago-maroon: #800000;
-    --uchicago-light-gray: #D6D6CE;
-    --uchicago-dark-gray: #767676;
-    --white: #FFFFFF;
-    --font-stack: 'EB Garamond', serif;
-  }
-  
-  /* Import font */
-  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-  
-  /* Apply styles */
-  body {
-    text-align: center;
-    width: 100%;
-    background-color: var(--uchicago-light-gray);
-    color: var(--uchicago-maroon);
-    font-family: var(--font-stack);
-    padding-bottom: 200px;
-  }
-  
-  nav {
-    background-color: var(--uchicago-maroon);
-    color: var(--white);
-  }
-  li {
-    list-style-type: none; /* Corrected */
-    display: inline-block;
+  --uchicago-maroon: #800000;
+  --white: #FFFFFF;
 }
 
-  
-  #Tech_dropdown, #DC_dropdown, .dropdown-menu {
-    background-color: var(--uchicago-maroon);
-  }
-  
-  .dropdown-item, .navbar-brand, .nav-link {
-    color: var(--white);
-  }
-  
-  .header {
-    background-color: var(--uchicago-light-gray);
-    color: var(--uchicago-maroon);
-  }
-  
-  .accordion-item {
-    background-color: var(--uchicago-maroon);
-    color: var(--white);
-  }
-  
-  .accordion-button {
-    background-color: var(--uchicago-maroon);
-    color: var(--white);
-  }
-  
-  input::placeholder {
-    color: var(--uchicago-maroon);
-  }
-  
-  .footer {
-    position: sticky;
-    bottom: 0;
-    margin-top: 50px;
-    background-color: var(--uchicago-dark-gray);
-    color: var(--white);
-  }
-  
-  .col-sm {
-    background-color: var(--uchicago-dark-gray);
-    padding: 20px;
-    margin: 15px;
-  }
-  
-  .centered {
-        text-align: center;
-        margin-bottom: 50px; /* Adjust the margin to create space */
-        margin-top: 50px;
-    }
+.navbar {
+  background-color: var(--uchicago-maroon);
+  color: white;
+  font-size: x-large; 
+}
+
+body {
+  text-align: center;
+  width: 100%;
+  background-color: var(#800000);
+  padding-bottom: 400px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: var(--uchicago-maroon);
+}
+
+p {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-size: x-large;
+  color: var(--uchicago-maroon);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust as needed */
+} */
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: 50px;
+  background-color: var(--uchicago-dark-gray);
+  color: var(--white);
+  padding: 20px; /* Adjust as needed */
+}
+
+/* Custom CSS for UChicago formatting */
+
+/* Navbar */
+.navbar {
+  background-color: maroon !important; /* Maroon background */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important; /* White text color for links */
+}
+
+.navbar-toggler-icon {
+  background-color: white; /* White color for the toggle icon */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background: color #800000; /* White background */
+}
+
+.dropdown-item {
+  color: maroon !important; /* Maroon text color for dropdown items */
+}
+
+/* Active link */
+.nav-item.active .nav-link {
+  color: white !important; /* Maroon text color for active link */
+}
