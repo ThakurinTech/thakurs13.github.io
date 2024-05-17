@@ -15,7 +15,8 @@ body {
   color: var(--uchicago-maroon);
 }
 
-.footer {
-  background-color: var(--uchicago-dark-gray);
-  color: var(--uchicago-light-gray);
-}/*# sourceMappingURL=stylewk3tp.css.map */
+.custom-footer{
+  background-color: var(--uchicago-light-gray);
+  color: var(--uchicago-maroon);
+
+}
